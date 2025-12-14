@@ -4,88 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="Logo" />
+        <img src="./assets/FES.svg" class="logo" alt="logo" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </section>
-    <section>
       <header>
-        <h1>Best Place To Learn To Code</h1>
-        <p>Go from beginner to pro with a simplified process.</p>
-        <button>Start Now</button>
-        <figure>
-          <img src="./assets/laptop.png" alt="FES on screen" />
-        </figure>
+        <div class="row">
+          <div>
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">
+              Go from being an absolute beginner to pro with a simplified process.
+            </p>
+            <button>Start Now</button>
+          </div>
+
+          <figure>
+            <img src="./assets/laptop.png" alt="FES on screen" />
+          </figure>
+        </div>
       </header>
     </section>
 
     <main>
       <section id="about">
-        <h2>About Us</h2>
-        <div>
-          <p>
-            We are dedicated to helping you learn to code effectively and
-            efficiently.
-          </p>
+        <h2>About</h2>
+        <div class="row">
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description--para">
+              We are dedicated to helping you learn to code effectively and
+              efficiently.
+            </p>
 
-          <p>
-            We are dedicated to helping you learn to code effectively and
-            efficiently.
-          </p>
+            <p class="section__description--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae explicabo iusto dignissimos quisquam quasi perferendis, consectetur esse nulla quod? Nesciunt, ex. Quaerat atque id nemo rem, sequi voluptas iste ab, exercitationem cumque obcaecati quisquam, assumenda vitae laboriosam pariatur? Iure expedita beatae est maxime doloribus cum magnam rerum dicta iusto?
+            </p>
+          </div>
+          <figure class="about__img--wrapper">
+            <img src="./assets/about.jpg" alt="laptop image" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="laptop image" />
-        </figure>
+        </div>
       </section>
-   
-      <section id="discord">
-        <h2>Join Our Discord</h2>
-        <figure>
-            <img src="./assets/discord.png" alt="discord image" />
-        </figure>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
-            voluptates officiis, doloremque cum vitae dolorem minima amet harum
-            sit assumenda omnis nostrum saepe deserunt similique, qui velit
-            exercitationem dicta eaque.
-          </p>
-          <p>
-            Connect with other learners and get support in our community Discord
-            server.
-          </p>
-        </div>
 
+      <section id="discord">
+        <h2>Discord</h2>
+        <div class="row">
+          <div class="section__description">
+            <figure class="about__img--wrapper">
+              <img src="./assets/discord.png" alt="discord image" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+                voluptates officiis, doloremque cum vitae dolorem minima amet
+                harum sit assumenda omnis nostrum saepe deserunt similique, qui
+                velit exercitationem dicta eaque.
+              </p>
+              <p class="section__description--para">
+                Connect with other learners and get support in our community
+                Discord server.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Contact</h2>
         <form action="">
-            <label for email>Email</label>
-            <input type="email" id="email" name="email" required />
-            <label for message>Message</label> 
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>   
+          <label for email>Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="jane@example.com"
+          />
+          <label for message>Message</label>
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            required
+            placeholder="Cool website, let's get connected!"
+          ></textarea>
+          <button type="submit">Contact Us!</button>
+        </form>
       </section>
     </main>
     <footer>
-        <img src="./assets/FES.svg" alt="Logo" />
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="#">Courses</a>
-        </div>
-        <p>&copy; 2024 First Project</p>
+      <img class="footer__logo" src="./assets/FES.svg" alt="Logo" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="#">Courses</a>
+      </div>
+      <p>&copy; 2024 First Project</p>
     </footer>
   </body>
 </html>
